@@ -9,7 +9,7 @@ import os
 import datetime
 import zipfile
 
-#Files umbenennen und nach Alt-Ordner kopieren
+#Files umbenennen und nach Alt-Ordner verschieben
 for filename in os.listdir("."):
     if filename.startswith("UMSATZ"):
         t = os.path.getmtime(filename)
@@ -23,6 +23,6 @@ zfile = zipfile.ZipFile("C://Users//robert//Downloads//UMSATZ.zip")
 zfile.extractall("C://Users//robert//Downloads")
 zfile.close()
 
-#Entpackte Datei in Coba-Daten-Verzeichnis kopieren
+#Entpackte Datei in Coba-Daten-Verzeichnis verschieben
 os.rename("C://Users//robert//Downloads//UMSATZ.txt",
           "X://01_Immo//Coba-Daten//Pythontest//UMSATZ.txt")
