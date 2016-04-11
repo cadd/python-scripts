@@ -7,7 +7,6 @@ db.serialize(function() {
 });
 
 
-
 var express = require('express');
 var restapi = express();
 
