@@ -1,7 +1,7 @@
 # DBtoJSON.py
 # Author: Vasudev Ram - http://www.dancingbison.com
 # Copyright 2014 Vasudev Ram
-# DBtoJSON.py is a program to DEMOnstrate how to read 
+# DBtoJSON.py is a program to DEMOnstrate how to read
 # SQLite database data and convert it to JSON.
 
 import sys
@@ -35,7 +35,7 @@ try:
     recs = curs.fetchall()
 
     print "DB data as a list with a dict per DB record:"
-    rows = [ dict(rec) for rec in recs ]
+    rows = [dict(rec) for rec in recs]
     print rows
 
     print
